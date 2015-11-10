@@ -10,7 +10,7 @@
 		<link href="css/reset.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
-		<h1>Mark Rusch</h1>
-
-	</body>
-</html>
+		<div id="container">
+				<header id="header">
+					<div id="banner"></div>
+				</header>
