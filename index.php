@@ -1,4 +1,3 @@
 <div id="content" class="home">
-	
-hello
+	HELLOOOOO
 </div>
