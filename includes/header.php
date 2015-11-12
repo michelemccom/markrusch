@@ -16,16 +16,14 @@
 				<header id="header">
 					<div class="branding">
 						<h1 id="logo"><a href="/" title="Mark Rusch"><span>Keep Judge 401st District Court</span></a></h1>
-					
+						<div class="seal"><img src="http://mccarea51.com/mrusch/images/state-seal.png" width="90" height="90" alt="State Seal of Texas"></div>
 					</div>
 					<nav>
-				
-							<ul>
-								<li><a href="/">Home</a></li>
-								<li><a href="/">Biography</a></li>
-								<li><a href="/">Endorsements</a></li>
-								<li><a href="/">Contact</a></li>
-							</ul>
-			
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/">Biography</a></li>
+							<li><a href="/">Endorsements</a></li>
+							<li><a href="/">Contact</a></li>
+						</ul>
 					</nav>
 				</header>

@@ -14,6 +14,5 @@
 
 			<p> &mdash; Mark Rusch</p>
 		</section>
-	</div>
 
 <?php include('includes/footer.php');?>

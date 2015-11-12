@@ -35,7 +35,7 @@ header {position: relative;}
     padding-right: 15px;
 }
 #content .shell {
-  padding-bottom: 40px;
+  padding-bottom: 0;
   padding-top: 10px;
   background: #fff;
     box-shadow: 0 9px 0 0 transparent, 0 -9px 0 0 transparent, 11px 0 61px -26px rgba(31, 73, 125, 0.3), -11px 0 61px -26px rgba(31, 73, 125, 0.3);
@@ -71,19 +71,7 @@ h1 {font-size: 36px;}
   color: transparent;
 }
 #logo span {display: block; height: 70px; width: 209px; background: url(../images/MarkRusch.png)no-repeat center;}
-.btn {
-  float: right; 
-  background: #fff; 
-  color: #470103;  
-  height: 50px;
-  line-height: 50px;
-  margin-top: 20px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 160px;
-}
-.btn a {display: block; color: #470103; text-transform: uppercase; font-size: 18px; text-decoration: none;}
+.seal {float: right;}
 nav {
   background: url(../images/blueribbon.png)no-repeat center/1354px; height: 100px; width: 100%; margin-bottom: -24px; 
 }
@@ -121,16 +109,22 @@ nav ul:after, .branding:after {clear: both;height: 0; display: block;content: ''
 #home-banner {
   background-image: url(../images/courthouse.jpg);
   height: 400px;
+  display: table;
 }
 .banner-text {
   width: 400px;
   margin: 30px auto 0;
   text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 .banner-text h2 {
   color: #fff;
   font-size: 42px;
-
+  text-shadow: 2px 2px 5px #333, -2px 2px 5px #333 , -2px -2px 5px #333, 2px -2px 5px #333;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 400px;
 }
 .banner-text span {display: block;}
 .banner-text .large {font-size: 56px; text-transform: uppercase;}
@@ -150,8 +144,51 @@ white-space: nowrap;
     }
 .banner-text .line:before { right: 1.5%; }
 .banner-text .line:after { left: 1.5%; }
+
+#donate {
+  background-color: #ffffff;
+  background-image: -moz-linear-gradient(center top , rgb(255, 255, 255), rgb(251, 251, 251));
+  border: 1px solid #dcdcdc;
+  margin: 15px -26px 0;
+  padding: 29px;
+  position: relative;
+
 }
-footer {background: #8A2E33; padding: 20px 0; color: #fff;}
+#donate:before {
+  border-left: 10px solid transparent;
+border-bottom: 10px solid #b1b1b1;
+top: -10px;
+content: "";
+height: 0;
+left: 0;
+position: absolute;
+width: 0;
+}
+#donate:after {
+  border-right: 10px solid transparent;
+border-bottom: 10px solid #b1b1b1;
+top: -10px;
+content: "";
+height: 0;
+position: absolute;
+right: 0;
+width: 0;
+}
+.btn {
+ 
+  background: #fff; 
+  color: #470103;  
+  height: 50px;
+  line-height: 50px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 160px;
+}
+
+.btn a {display: block; color: #470103; text-transform: uppercase; font-size: 18px; text-decoration: none;}
+footer {background: #8A2E33; padding: 20px 0; color: #fff; position: relative;}
 footer .shell {background: none;}
 footer p {font-size: 12px;}
 #footer-bkgd {background: #8A2E33; border-top: 10px solid #AB3035; position: absolute;bottom: 0; width: 100%; height: 200px;}
