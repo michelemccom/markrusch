@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#">
-i am updating my local branch
 	<head>
-
   		<title>Mark Rusch</title>
   		<meta property="og:title" content="Keep Judge Mark Rusch">
 		<meta property="og:type" content="website">
