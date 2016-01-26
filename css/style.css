@@ -1,13 +1,66 @@
 body {
 	background: #fff;
   color: #333;
-  font-size: 14px;
-  line-height:  1.1em;
+  font-size: 15px;
+  line-height:  1.4em;
   font-family: 'Poly', serif;
 
 }
+a:focus, a {outline: none; color:#540000;}
 p {margin-bottom: 15px;}
-header {position: relative;}
+body, h1, h2, h3, h4, h5, h6 {font-family: 'Poly', serif; }
+h1, h2, h3, h4, h5, h6 {
+  color: #540000;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  clear: both;
+  margin-bottom: 10px;
+}
+
+h1 {font-size: 36px;}
+h2 {font-size: 30px;}
+h3 {font-size: 26px;}
+
+input, textarea, select, td, th {
+    font-size: 1em;
+    font-family: 'Poly', serif;
+}
+input, textarea {width: 100%; margin-bottom: 15px; border: 1px solid #540000;padding: 3px 1%;}
+input { height: 30px}
+input.short {width: 32.1%; margin-right: 1%;}
+input#zip {margin-right: 0;}
+input[type="checkbox"] { border: 1px solid #540000; width: 20px; height: 20px; display: inline-block; margin-right: 15px;}
+input[type="submit"] {margin-bottom: 0; line-height: inherit;}
+label {display: inline-block; width: 450px; margin-bottom: 15px;}
+textarea {height: 200px;}
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 0;
+}
+::-webkit-input-placeholder {
+    color: #333;
+    opacity: 1 !important; /* for chrome */
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #333;
+    opacity: 1 !important;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #333;
+    opacity: 1 !important;
+}
+:-ms-input-placeholder {  
+   color: #333;
+   opacity: 1 !important;
+}
+.hf_validation_required {margin-top: -15px; margin-bottom: 10px}
+input#spam {display: none;}
+blockquote {margin:0 10px 30px 10px;}
+/******** Structure *********/
 
 #bkgd-banner {
 	border-bottom: 1px solid #fff;
@@ -31,8 +84,8 @@ header {position: relative;}
     width: 980px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 #content .shell {
   padding-bottom: 0;
@@ -40,17 +93,17 @@ header {position: relative;}
   background: #fff;
     box-shadow: 0 9px 0 0 transparent, 0 -9px 0 0 transparent, 11px 0 61px -26px rgba(31, 73, 125, 0.3), -11px 0 61px -26px rgba(31, 73, 125, 0.3);
 }
-
-h1, h2, h3, h4, h5, h6 {
-  color: inherit;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
+.copy {margin-bottom: 30px;}
+section:after {
   clear: both;
-  font-family: 'Poly', serif;
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 
-h1 {font-size: 36px;}
+/******** Header *********/
+header {position: relative;}
 
 .branding {
   display: block;
@@ -61,7 +114,7 @@ h1 {font-size: 36px;}
 #logo {
   font-size: 18px;
   width: 209px;
-  padding: 10px 0;
+  padding: 15px 0;
   float: left;
 }
 #logo a {
@@ -71,7 +124,7 @@ h1 {font-size: 36px;}
   color: transparent;
 }
 #logo span {display: block; height: 70px; width: 209px; background: url(../images/MarkRusch.png)no-repeat center;}
-.seal {float: right;}
+.seal {float: right; padding: 5px 0; height: 100px;}
 nav {
   background: url(../images/blueribbon.png)no-repeat center/1354px; height: 100px; width: 100%; margin-bottom: -24px; 
 }
@@ -97,7 +150,11 @@ nav ul li a {
   font-size: 18px;
   text-decoration: none;
 }
+nav ul li:hover a, nav ul li.current a {text-decoration: underline;}
 nav ul:after, .branding:after {clear: both;height: 0; display: block;content: ''; visibility: hidden;}
+
+/******** Banners  *********/
+
 .banner {
   position: relative;
   background-size: cover;
@@ -105,29 +162,41 @@ nav ul:after, .branding:after {clear: both;height: 0; display: block;content: ''
   background-repeat: no-repeat;
   width: 100%;
   margin: 0 auto 30px;
+  display: table;
+   height: 400px;
 }
 #home-banner {
+  background-image: url(../images/gavel.jpg);
+ 
+}
+#biography-banner {
+  background-image: url(../images/markatdesk.jpg);
+  background-position: center 71%;
+}
+#endorsements-banner {
+  background-image: url(../images/markbench.jpg);
+}
+#contact-banner {
   background-image: url(../images/courthouse.jpg);
-  height: 400px;
-  display: table;
+
 }
 .banner-text {
-  width: 400px;
+  width: 460px;
   margin: 30px auto 0;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
 }
 .banner-text h2 {
-  color: #fff;
+  color: #ab3035;
   font-size: 42px;
-  text-shadow: 2px 2px 5px #333, -2px 2px 5px #333 , -2px -2px 5px #333, 2px -2px 5px #333;
+  text-shadow:1px 1px 5px #fff, -1px 1px 5px #fff, -1px -1px 5px #fff, 1px -1px 5px #fff;
   text-transform: uppercase;
   margin: 0 auto;
-  width: 400px;
+  width: 460px;
 }
 .banner-text span {display: block;}
-.banner-text .large {font-size: 56px; text-transform: uppercase;}
+.banner-text .large {font-size: 70px; text-transform: uppercase;}
 
 .banner-text .line {
  
@@ -135,7 +204,7 @@ nav ul:after, .branding:after {clear: both;height: 0; display: block;content: ''
 white-space: nowrap;
 }
  .banner-text .line:before, .banner-text .line:after {
-      border-top: 1px solid #fff;
+      border-top: 3px solid #ab3035;
       content: '';
       display: table-cell;
       position: relative;
@@ -145,50 +214,85 @@ white-space: nowrap;
 .banner-text .line:before { right: 1.5%; }
 .banner-text .line:after { left: 1.5%; }
 
-#donate {
-  background-color: #ffffff;
-  background-image: -moz-linear-gradient(center top , rgb(255, 255, 255), rgb(251, 251, 251));
-  border: 1px solid #dcdcdc;
-  margin: 15px -26px 0;
-  padding: 29px;
-  position: relative;
+/******** Home *********/
+
+.home .copy h3 {margin-top: 50px;}
+
+/******** Contact *********/
+
+#contact-us {width: 500px; float: left;}
+#content.contact aside {float: right; width: 400px; text-align: center;}
+
+/******** Endorsements *********/
+
+#content.endorsements ul {
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+}
+#content.endorsements ul.special {
+  margin-bottom: 30px;
 
 }
-#donate:before {
-  border-left: 10px solid transparent;
-border-bottom: 10px solid #b1b1b1;
-top: -10px;
-content: "";
-height: 0;
-left: 0;
-position: absolute;
-width: 0;
+#content.endorsements ul li {
+    display: inline-block;
+    margin: 0;
+    width: 280px;
 }
-#donate:after {
-  border-right: 10px solid transparent;
-border-bottom: 10px solid #b1b1b1;
-top: -10px;
-content: "";
-height: 0;
-position: absolute;
-right: 0;
-width: 0;
+#content.endorsements ul.special li {padding-bottom: 15px; }
+
+#content.endorsements ul.special li{
+  font-size: 16px;
+  color: #540000;
+  font-weight: bold;
+  width: 304px;
+
+}
+
+/******** Donate Strip *********/
+#donate {
+  background: url("../images/blueribbonup.png") no-repeat center / 1354px auto;
+  margin: -24px -217px 0;
+  padding: 38px 10px 20px 0;
+  position: relative; 
+  height: 100px; 
+  width: 1354px; 
+  text-align: center;
+}
+
+#donate h3 {
+    font-size: 28px;
+    display: inline-block;
+    width: 440px;
+    color: #fff;
+    margin: 0;
 }
 .btn {
- 
-  background: #fff; 
-  color: #470103;  
+  display: inline-block;
+  background: #540000; 
+  color: #fff;  
   height: 50px;
   line-height: 50px;
-  margin-top: 20px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   width: 160px;
 }
 
-.btn a {display: block; color: #470103; text-transform: uppercase; font-size: 18px; text-decoration: none;}
+.btn:hover {background:#8D2026}
+.btn a {display: block; color: #fff; text-transform: uppercase; font-size: 18px; text-decoration: none;}
+
+#donatePayPal {display: inline-block; margin-left: 20px;}
+#donatePayPal input {width: 147px; height: auto; margin: 0; border: none;}
+/******** Footer *********/
 footer {background: #8A2E33; padding: 20px 0; color: #fff; position: relative;}
 footer .shell {background: none;}
 footer p {font-size: 12px;}
-#footer-bkgd {background: #8A2E33; border-top: 10px solid #AB3035; position: absolute;bottom: 0; width: 100%; height: 200px;}
+#footer-bkgd {background:url(../images/gradient.jpg); position: absolute;bottom: 0; width: 100%; height: 222px;}
+.social {width: 32px; margin: 0 auto 15px;}
+.social li {width: 32px; height: 32px; position: relative;}
+.social li a {text-indent: -10000px; display: block;width: 32px; height: 32px;}
+.social li.facebook a {background: url(../images/facebook.png);}
+.social li.facebook:hover a {opacity: .8;}
+
