@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#">
-hello its me
+hi
 	<head>
 
   		<title>Mark Rusch</title>
