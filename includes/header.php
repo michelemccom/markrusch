@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#">
-
 one more time
 
 	<head>
