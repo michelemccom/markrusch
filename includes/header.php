@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#">
-<<<<<<< HEAD
-one more time
-=======
 
->>>>>>> parent of c0f5fc3... Merge branch 'gh-pages'
+one more time
+
 	<head>
   		<title>Mark Rusch</title>
   		<meta property="og:title" content="Keep Judge Mark Rusch">
