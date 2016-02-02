@@ -13,18 +13,18 @@
 					<li>Mayor of McKinney<br />Brian Loughmiller</li>
 					<li>Mayor of Allen<br /> Steve Terrell</li>
 					<li>McKinney Mayor Pro Tem<br/> Travis Ussery</li>
-
+						<li></li>
 					<li>Constable Precinct 3 Sammy Knapp</li>
 					<li>Collin County Commissioner<br />Duncan Webb	</li>
 					<li> Collin County Commissioner<br />Cheryl Williams</li>
 					<li>Patriot Texas Conservative Activists</li>
-					<li></li>
+						<li></li>
 					<li>Collin County Deputies Association</li>
 					<li> McKinney Police Association</li>
 					<li>Plano Police Association</li>
 					<li>Farmersville Police Employees Association </li>
-					<li></li>
-			
+						<li></li>
+				
 
 				</ul>
 				<ul>
