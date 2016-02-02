@@ -21,8 +21,6 @@
 					<li> McKinney Police Association</li>
 					<li>Plano Police Association</li>
 					<li>Farmersville Police Employees Association </li>
-					<li></li>
-			
 
 				</ul>
 				<ul>
